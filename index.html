@@ -22,17 +22,19 @@
             </ul>
         </nav>
     </header>
-    <SECtion id="sobre"> <!--Sessões dentro do site, 'id="Palavra do menu"' faz um link direto a uma palavra atribuida em um link no menu-->
+    <SECtion id="sobre">
+        <!--Sessões dentro do site, 'id="Palavra do menu"' faz um link direto a uma palavra atribuida em um link no menu-->
         <H2>Sobre mim</H2><!--Título médio-->
 
         <img src="https://media.licdn.com/dms/image/v2/C4D03AQEscG1xZdX4HA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1655254572649?e=1773273600&v=beta&t=4PnIV4V4QSLo7Hdqdrsw9qvNJZwpE7CsHw9Z7-Bhk4w"
-            alt="Foto indisponível no momento" title="Imagem de Perfil"> <!--Link para imagem, alt = texto exibido caso a imagem não apareça-->
+            alt="Foto indisponível no momento" title="Imagem de Perfil">
+        <!--Link para imagem, alt = texto exibido caso a imagem não apareça-->
 
         <article><!-- artigo, espaço destinado a artigos-->
 
             <p><!--parágrafo de texto-->
 
-                Olá sou Josafá, desenvolvedor web a mais de 10 anos. Estou iniciando em novas frentes.
+                Olá sou Josafá, desenvolvedor web a mais de 10 anos.
             </p>
 
         </article>
@@ -61,12 +63,82 @@
         </article>
     </section>
 
+    <section id="habilidades">
+
+        <h2>Habilidades e tecnologias</h2>
+
+        <table>
+            <thead>
+                <tr>
+
+                    <th>Tecnologia</th>
+                    <th>Nível</th>
+                    <th>Descrição</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>HTML</td>
+                    <td>Intermediário</td>
+                    <td>Capaz de construir estruturas de páginas web semânticas e responsivas.</td>
+                </tr>
+
+                <tr>
+                    <td>CSS</td>
+                    <td>Básico</td>
+                    <td>Experiência com flexboz, grid e animação CSS.</td>
+                </tr>
+
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Básico</td>
+                    <td>Desenvolvimento de scripts do lado do cliente para interações.</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
     <footer><!--Rodapé do site-->
         <p>Direitos reservados a Jô</p>
 
         <section id="contato">
             <h2>Contatos</h2>
             <p>Tem um projeto em mente? Entre em conata.</p>
+
+            <form action=""><!--Cria formulários-->
+                <label for="nome">Nome: </label><!--Nome do conteúdo que será preenchido-->
+                <input type="text" id="nome" name="nome"
+                    required><br><!--Entrada de dados: Tipo do conteúdo, identificação. O nome do campo que terá o valor de entrada do conteúdo, obrigatoriedade de preenchimento-->
+
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="telefone">Telefone: </label>
+                <input type="tel" id="telefone" name="telefone"><br>
+
+                <label for="assunto">Assunto: </label>
+                <select name="assunto" id="assunto">Assunto: <!--Campo com opções de seleção, ou menú suspenso-->
+                    <option value="orcamento">Orçamento</option><!--Opções do menu suspenso-->
+                    <option value="duvida">Dúvida</option>
+                    <option value="outro">Outro</option>
+                </select><br>
+
+                <label for="mensagem">Mensagem: </label>
+                <textarea name="mensagem" id="mensagem" cols="20" rows="5"
+                    required></textarea><br><!--Área de entrada de texto, tamanho da área de texto, obrigatoriedade de preenchimento-->
+
+                <input type="checkbox" id="inscricao" name="inscricao"><!--Entrada tipo checkbox-->
+                <label for="inscricao">Deseja receber nossa newsletter? Fique por dentro.
+                </label><br>
+
+                <input type="submit" value="Enviar mensagem"><!--Entrada tipo botão: Enviar mensagem-->
+
+            </form><br>
 
             <address><!--Endereços, deixa o texto em itálico-->
                 E-mail: <a href="mailto:odisydigital@gmail.com">odisydigital@gmail.com</a><br>
